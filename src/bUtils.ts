@@ -8,7 +8,7 @@ interface IBUtils {
  * @implements {IBUtils}
  * @example const bUtils = new BUtils();
  */
-class BUtils implements IBUtils {
+export class BUtils implements IBUtils {
    
     /**
      * @description Converts an array to a Hasura object
