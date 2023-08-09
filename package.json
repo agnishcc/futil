@@ -28,7 +28,8 @@
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "test": "mocha",
     "semantic-release": "semantic-release",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "typedoc": "typedoc --out ./docs ./src"
   },
   "publishConfig": {
     "access": "public"
