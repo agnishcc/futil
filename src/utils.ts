@@ -25,7 +25,36 @@ export class Utils implements IUtils {
        return `${word}-${randomWord}`
     }
 
-    
+    /**
+     * @description A function that cross converts revenue between string and number
+     * @param revenue The revenue to convert
+     * @returns Converted revenue
+     * @example revenueConverter("Early Revenue") // -1
+     * @example revenueConverter(-1) // "Early Revenue"
+     * @example revenueConverter("Not Disclosed") // -2
+     * @example revenueConverter(-2) // "Not Disclosed"
+     * @example revenueConverter(45966) // 45966
+     * @example revenueConverter("7285") // 7285
+     */
+    public revenueConverter(revenue: number| string): string | number {
+        if (typeof revenue === 'string') {
+            if (revenue = "Early Revenue") {
+                return -1;
+            }
+            if (revenue = "Not Disclosed") {
+                return -2;
+            }
+        }
+        if (typeof revenue === 'number' || (typeof revenue === 'string' && !isNaN(Number(revenue)))) {
+            if (revenue === -1) {
+                return "Early Revenue";
+            }
+            if (revenue === -2) {
+                return "Not Disclosed";
+            }
+        }
+        return revenue;
+    }
 }
 
 
