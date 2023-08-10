@@ -1,6 +1,6 @@
 {
   "name": "@agnishc/futil",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A toolkit for fe utils",
   "repository": "git@github.com:agnishcc/futil.git",
   "author": "Agnish Chakraborty <agnishc.dev@gmail.com>",
