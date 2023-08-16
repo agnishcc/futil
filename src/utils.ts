@@ -38,10 +38,10 @@ export class Utils implements IUtils {
      */
     public revenueConverter(revenue: number| string): string | number {
         if (typeof revenue === 'string') {
-            if (revenue = "Early Revenue") {
+            if (revenue === "Early Revenue") {
                 return -1;
             }
-            if (revenue = "Not Disclosed") {
+            if (revenue === "Not Disclosed") {
                 return -2;
             }
         }
